@@ -429,3 +429,34 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+.fa
+{
+    color:black;
+
+    animation: colorchange1 50s;
+    -webkit-animation: colorchange1 50s
+}
+
+@keyframes colorchange1
+{
+0%   {color: green;}
+15%  {color: orange;}
+30%  {color:purple;}
+45%  {color: #e74c3c;}
+60% {color: violet;}
+75% {color: indigo;}
+90% {color: blue;}
+100% {color: black;}
+}
+
+@-webkit-keyframes colorchange1 /* Safari and Chrome - necessary duplicate */
+{
+    0%   {color: green;}
+    15%  {color: orange;}
+    30%  {color:purple;}
+    45%  {color: #e74c3c;}
+    60% {color: violet;}
+    75% {color: indigo;}
+    90% {color: blue;}
+    100% {color: black;}
+}
